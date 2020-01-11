@@ -3,7 +3,7 @@ class Hero
   @@all = []
   def initialize(params)
     @name = params[:name]
-    @weight = params[:power]
+    @power = params[:power]
     @bio = params[:bio]
     @@all << self
   end
