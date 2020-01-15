@@ -1,1 +1,7 @@
+<h1><%= @hero.name %></h1>
+<h2><a href="/team/<%=@hero.team.id%>">Team: <%= @hero.team.name %></a></h2>
 
+<ul>
+  <li><strong>Hero Power:</strong> <%=@hero.power%></li>
+  <li><strong>Hero Biography:</strong> <%=@hero.bio%></li>
+</ul>
