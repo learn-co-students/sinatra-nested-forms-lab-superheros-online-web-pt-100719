@@ -1,3 +1,13 @@
+<h1><%= @team.name %></h1>
+<h2>Team Motto: <%= @team.motto %></h2>
 
+<% @team.heros.each.with_index(1) do |hero,i| %>
+  <h3><a href="/super_hero/<%= hero.id %>">Hero <%= i %></a></h3>
+  <ul>
+    <li><strong>Hero Name:</strong> <%=hero.name%></li>
+    <li><strong>Hero Power:</strong> <%=hero.power%></li>
+    <li><strong>Hero Biography:</strong> <%=hero.bio%></li>
+  </ul>
+<% end %>
 
 

@@ -4,6 +4,8 @@ source "https://rubygems.org"
 # gem "rails"
 
 gem 'sinatra', '1.4.6'
+gem 'activerecord', '5.2'
+gem 'sinatra-activerecord'
 gem 'rake', '10.4.2'
 gem 'thin', '1.6.4'
 gem 'shotgun', '0.9'
@@ -14,4 +16,5 @@ group :test do
   gem 'rspec', '3.3.0'
   gem 'capybara', '2.5.0'
   gem 'rack-test', '>= 0.5.4'
+  gem 'sqlite3', '~> 1.3.6'
 end

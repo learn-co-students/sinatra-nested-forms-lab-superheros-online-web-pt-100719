@@ -1,0 +1,5 @@
+<ol>
+<% @teams.each do |team| %>
+    <li><a href="/team/<%=team.id%>"><%=team.name%></a></li>
+<% end %>
+</ol>
