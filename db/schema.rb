@@ -10,6 +10,18 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 0) do
+ActiveRecord::Schema.define(version: 2020_01_21_021621) do
+
+  create_table "heros", force: :cascade do |t|
+    t.string "name"
+    t.string "power"
+    t.text "bio"
+    t.integer "team_id"
+  end
+
+  create_table "teams", force: :cascade do |t|
+    t.string "name"
+    t.string "motto"
+  end
 
 end
