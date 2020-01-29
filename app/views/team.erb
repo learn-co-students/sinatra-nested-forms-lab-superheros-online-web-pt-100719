@@ -6,12 +6,12 @@
   <body>
     <h1><%= @team.name %></h1>
     <h2>Team Motto: <%= @team.motto %></h2>
-    <% @members.each do |member| %>
-      <h2>Hero Name: <%= member.name %></h2>
+    <% @heroes.each do |hero| %>
+      <h2>Hero Name: <%= hero.name %></h2>
       <p>
-        Hero Power: <%= member.power %>
+        Hero Power: <%= hero.power %>
         <br />
-        Hero Biography: <%= member.bio %>
+        Hero Biography: <%= hero.bio %>
       </p>
     <% end %>
   </body>
